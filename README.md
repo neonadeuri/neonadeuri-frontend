@@ -2,9 +2,7 @@
 
 **포트폴리오를 위한 프로젝트입니다.**
 
-## 시작단계
-
-### install
+## install
 
 **설치물 extentions**
 
@@ -18,7 +16,7 @@ ESLint
 
 ![extentions](./utils/installextentions.png)
 
-### Start
+## Start
 
 터미널에서 아래먼저 쳐서 local 환경을 맞추고
 
@@ -40,7 +38,7 @@ Tailwind를 동적으로 실시간 보면서 코딩하고싶다 하면 아래
 
 나머지는 package.json의 스크립트 참고하세요
 
-### reference
+## reference
 
 nextjs 13
 
