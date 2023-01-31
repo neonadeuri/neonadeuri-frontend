@@ -12,6 +12,14 @@
 
 ### Start
 
+**설치물 extentions**
+prettier
+ZipFS
+Tailwind CSS IntelliSense
+ESLint
+
+![extentions](./installextentions.png)
+
 ```
   yarn dev
 ```
