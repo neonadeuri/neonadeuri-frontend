@@ -6,19 +6,27 @@
 
 ### install
 
+**설치물 extentions**
+
+prettier
+
+ZipFS
+
+Tailwind CSS IntelliSense
+
+ESLint
+
+![extentions](./utils/installextentions.png)
+
+### Start
+
+터미널에서 아래먼저 쳐서 local 환경을 맞추고
+
 ```
   yarn setup
 ```
 
-### Start
-
-**설치물 extentions**
-prettier
-ZipFS
-Tailwind CSS IntelliSense
-ESLint
-
-![extentions](./utils/installextentions.png)
+local server 올림
 
 ```
   yarn dev
@@ -35,6 +43,9 @@ Tailwind를 동적으로 실시간 보면서 코딩하고싶다 하면 아래
 ### reference
 
 nextjs 13
+
 typescript
+
 yarn berry pnp zero install
+
 node version v19.2.0
