@@ -18,7 +18,7 @@ ZipFS
 Tailwind CSS IntelliSense
 ESLint
 
-![extentions](./installextentions.png)
+![extentions](./utils/installextentions.png)
 
 ```
   yarn dev
