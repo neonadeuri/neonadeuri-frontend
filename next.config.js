@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
-const backendUrl = process.env.BACKEND_URL;
+
+// backend url
+const backendUrl = process.env.BACKEND_URL || 'http://localhost:3000';
 const nextConfig = {
   reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
   experimental: {
