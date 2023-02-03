@@ -36,6 +36,12 @@ Tailwind를 동적으로 실시간 보면서 코딩하고싶다 하면 아래
   yarn dev:tailwind
 ```
 
+Storybook 사용
+
+```
+  yarn storybook
+```
+
 나머지는 package.json의 스크립트 참고하세요
 
 ## reference
@@ -47,3 +53,7 @@ typescript
 yarn berry pnp zero install
 
 node version v19.2.0
+
+tailwindcss
+
+storybook
