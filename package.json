@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev\" \"yarn tailwind\"",
-    "dev:tailwind": "concurrently \"next dev\" \"yarn tailwind --watch\"",
+    "dev": "concurrently \"next dev -p 3005\" \"yarn tailwind\"",
+    "dev:tailwind": "concurrently \"next dev -p 3005\" \"yarn tailwind --watch\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
