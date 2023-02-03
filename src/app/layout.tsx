@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-css-tags */
-import 'styles/globals.css';
+// import 'styles/globals.css';
 import React from 'react';
 import Providers from 'lib/providers';
 import Header from 'components/templates/Header';
