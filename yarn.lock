@@ -14369,6 +14369,9 @@ next@latest:
     typescript: 4.7.4
     use-count-up: 3.0.1
     validator: 13.7.0
+  dependenciesMeta:
+    next@13.0.5:
+      unplugged: true
   languageName: unknown
   linkType: soft
 
