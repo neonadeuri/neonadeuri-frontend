@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Header from './Header';
 
 export default {
-  title: 'atoms/Header',
+  title: 'templates/Header',
   component: Header,
   // argTypes: {
   //   size: {
