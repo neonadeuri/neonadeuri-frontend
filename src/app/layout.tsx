@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-css-tags */
+import 'styles/globals.css';
 import React from 'react';
 import Providers from 'lib/providers';
+import Header from 'components/templates/Header';
 
 export default function RootLayout({
   children,
@@ -19,7 +21,8 @@ export default function RootLayout({
       </head>
       <body className="h-screen w-screen overflow-hidden whitespace-nowrap bg-transparent">
         <Providers>
-          <main className="h-full w-full grow pl-40">{children}</main>
+          <Header />
+          <main className="h-full w-full">{children}</main>
         </Providers>
       </body>
     </html>

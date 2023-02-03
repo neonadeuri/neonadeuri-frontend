@@ -533,12 +533,25 @@ video {
   position: fixed;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .left-0 {
   left: 0px;
 }
 
 .top-0 {
   top: 0px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml-12 {
+  margin-left: 3rem;
 }
 
 .flex {
@@ -575,14 +588,6 @@ video {
 
 .h-10 {
   height: 2.5rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .h-16 {
@@ -625,8 +630,8 @@ video {
   max-width: 24rem;
 }
 
-.grow {
-  flex-grow: 1;
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 @keyframes spin {
@@ -639,12 +644,20 @@ video {
   animation: spin 1s linear infinite;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .overflow-hidden {
@@ -659,6 +672,15 @@ video {
   border-radius: 0.125rem;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -671,16 +693,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-75 {
@@ -705,37 +717,36 @@ video {
   padding-bottom: 1rem;
 }
 
-.pt-40 {
-  padding-top: 10rem;
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
+.pl-12 {
+  padding-left: 3rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
-.pt-11 {
-  padding-top: 2.75rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
+.font-bold {
+  font-weight: 700;
 }
 
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .transition-opacity {

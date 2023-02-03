@@ -6,7 +6,7 @@
     "build": "yarn tailwind && next build",
     "start": "next start",
     "lint": "next lint",
-    "tailwind": "tailwindcss -i src/styles/globals.css -o public/styles/dist.css",
+    "tailwind": "tailwindcss -i src/styles/globals.css -o src/styles/dist.css",
     "format": "prettier --write \"src/**/*.{js,ts,tsx,md}\"",
     "setup": "yarn && yarn dlx @yarnpkg/sdks vscode",
     "postinstall": "yarn tailwind",
