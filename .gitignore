@@ -40,7 +40,7 @@ yarn-error.log*
 .vscode
 styles/dist.css
 
-# yarn pnp
+# yarn pnp zero install
 .yarn/*
 !.yarn/cache
 !.yarn/patches

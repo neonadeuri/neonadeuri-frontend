@@ -9,6 +9,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'next',
+    'plugin:storybook/recommended',
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
