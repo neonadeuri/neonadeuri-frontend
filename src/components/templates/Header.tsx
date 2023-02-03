@@ -41,10 +41,32 @@ const Header = () => {
             </HeadLink>
           ))}
         </div>
-        <div className="flex">
-          <div className="text-2xl text-black cursor-pointer">
-            <i className="fa fa-bell pl-12" />
-            <i className="fa-sharp fa-solid fa-ellipsis-vertical pl-12"></i>
+        <div className="flex items-center">
+          <div className="pl-10">
+            <Link className="" href="/">
+              <i className="fa-sharp fa-solid fa-ellipsis-vertical font-bold text-2xl"></i>
+            </Link>
+          </div>
+          <div className="pl-10">
+            <Link className="" href="/">
+              <i className="fa fa-bell font-bold text-2xl" />
+            </Link>
+          </div>
+          <div className="pl-10">
+            <Link
+              className="bg-gray-900 hover:bg-gray-700 text-white font-bold rounded-2xl px-6 py-2"
+              href="/"
+            >
+              로그아웃
+            </Link>
+          </div>
+          <div className="pl-10">
+            <Link
+              className="bg-gray-900 hover:bg-gray-700 text-white font-bold rounded-2xl px-6 py-2"
+              href="/account"
+            >
+              로그인
+            </Link>
           </div>
         </div>
       </div>
