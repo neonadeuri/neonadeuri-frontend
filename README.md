@@ -18,7 +18,7 @@ ESLint
 
 ## Start
 
-터미널에서 아래먼저 쳐서 local 환경을 맞추고 
+터미널에서 아래먼저 쳐서 local 환경을 맞추고
 
 ```
   yarn setup
@@ -42,7 +42,7 @@ Storybook 사용
   yarn storybook
 ```
 
-나머지는 package.json의 스크립트 참고하세요 
+나머지는 package.json의 스크립트 참고하세요
 
 ## reference
 
@@ -57,3 +57,5 @@ node version v19.2.0
 tailwindcss
 
 storybook
+
+[TEST] PR_TEST
