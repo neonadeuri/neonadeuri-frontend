@@ -18,7 +18,7 @@ ESLint
 
 ## Start
 
-터미널에서 아래먼저 쳐서 local 환경을 맞추고
+터미널에서 아래먼저 쳐서 local 환경을 맞추고 
 
 ```
   yarn setup
