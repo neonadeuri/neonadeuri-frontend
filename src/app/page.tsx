@@ -1,12 +1,9 @@
-import Link from 'next/link';
 import React from 'react';
 export default function Page() {
   return (
-    <div className="">
-      <div className="">
-        boilerplate <br />
-        링크 테스트:
-        <Link href="/mybooks"> 내서재 링크</Link>
+    <div className="h-full w-full">
+      <div className="h-full px-6 py-4">
+        <p>메인페이지</p>
       </div>
     </div>
   );
