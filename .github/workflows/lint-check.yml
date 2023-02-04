@@ -2,7 +2,10 @@ name: Lint
 
 on:
   pull_request:
-
+    branches:
+      - 'feature/**'
+      - 'refactor/**'
+    
 jobs:
   run-linters:
     name: Run linters
