@@ -8,3 +8,4 @@ public
 .prettierrc.js
 tsconfig.json
 src/styles/dist.css
+.github
