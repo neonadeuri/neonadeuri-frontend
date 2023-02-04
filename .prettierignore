@@ -7,3 +7,4 @@ public
 .eslintrc.js
 .prettierrc.js
 tsconfig.json
+src/styles/dist.css
