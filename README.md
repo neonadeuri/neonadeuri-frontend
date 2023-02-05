@@ -42,7 +42,7 @@ Storybook 사용
   yarn storybook
 ```
 
-나머지는 package.json의 스크립트 참고하세요
+나머지는 package.json의 스크립트 참고하세요.
 
 ## reference
 
