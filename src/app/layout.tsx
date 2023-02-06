@@ -15,11 +15,11 @@ export default function RootLayout({
         <title>달밤 Front</title>
         <link
           rel="stylesheet"
-          href="/fontawesome-free-6.2.1-web/css/all.min.css"
+          href="/styles/fontawesome-free-6.2.1-web/css/all.min.css"
         />
         <link rel="stylesheet" href="/styles/dist.css" />
       </head>
-      <body className="h-screen w-screen overflow-hidden whitespace-nowrap bg-transparent">
+      <body className="h-screen w-screen overflow-auto whitespace-nowrap bg-transparent">
         <Providers>
           <Header />
           <main className="h-full w-full">{children}</main>

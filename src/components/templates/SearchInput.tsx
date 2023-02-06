@@ -19,7 +19,7 @@ const SearchInput = (props: IProps) => {
           <input
             type="text"
             placeholder="검색어를 입력해주세요."
-            className="grow flex-1 bg-transparent pl-2 focus:outline-none focus:ring-0"
+            className="grow text-gray-700 flex-1 bg-transparent pl-2 focus:outline-none focus:ring-0"
           />
         </div>
         <i className="fa fa-search pr-4" />
