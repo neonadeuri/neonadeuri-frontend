@@ -2,7 +2,6 @@ import { ISearchBooksRequest, IGetSearchBook } from 'interface/book';
 import ins from './core';
 
 const getBooks = async (params: ISearchBooksRequest) => {
-  console.log('params - ', params);
   const res = await ins.get('/books', {
     params,
   });
