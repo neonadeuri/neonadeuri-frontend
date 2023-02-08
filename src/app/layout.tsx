@@ -2,7 +2,11 @@
 // import 'styles/globals.css';
 import React from 'react';
 import Providers from 'lib/providers';
-import Header from 'components/templates/Header';
+import Header from 'components/organism/Header';
+
+if (process.env.NEXT_PUBLIC_API_MOCKING === 'enabled') {
+  require('../../.mocks');
+}
 
 export default function RootLayout({
   children,
@@ -19,7 +23,7 @@ export default function RootLayout({
         />
         <link rel="stylesheet" href="/styles/dist.css" />
       </head>
-      <body className="h-screen w-screen overflow-auto whitespace-nowrap bg-transparent">
+      <body className="h-screen w-screen overflow-y-auto overflow-x-hidden whitespace-nowrap bg-transparent">
         <Providers>
           <Header />
           <main className="h-full w-full">{children}</main>

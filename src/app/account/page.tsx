@@ -1,4 +1,4 @@
-import Login from 'components/templates/Login';
+import Login from 'components/organism/Login';
 import React from 'react';
 
 export default function Page() {
