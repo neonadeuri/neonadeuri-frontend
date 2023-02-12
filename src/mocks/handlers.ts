@@ -3,8 +3,8 @@ import { rest } from 'msw';
 const backendUrl = process.env.BACKEND_URL || 'http://localhost:3000';
 export const handlers = [
   rest.get(`${backendUrl}/books`, (req, res, ctx) => {
-    const query = req.url.searchParams.get("query");
-    console.log("query - ", query);
+    const query = req.url.searchParams.get('query');
+    console.log('query - ', query);
     return res(
       ctx.status(200),
       ctx.delay(1000),
@@ -23,7 +23,8 @@ export const handlers = [
             publishing_date: '2014-11-17T00:00:00.000+09:00',
             thumbnail:
               'https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F1467038',
-          },{
+          },
+          {
             isSubscribe: false,
             subscriberCnt: 0,
             isbn: '1',
@@ -41,4 +42,3 @@ export const handlers = [
     );
   }),
 ];
-
