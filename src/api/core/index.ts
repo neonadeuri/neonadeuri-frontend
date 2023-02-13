@@ -1,23 +1,26 @@
 import axios from 'axios';
+import applyCaseMiddleware from 'axios-case-converter';
+import { adaptIsoStrings } from './isoConverter';
 
-const instance = axios.create({
-  timeout: 30000,
-  baseURL: '/api',
-  withCredentials: false,
-  headers: {
-    'Content-Type': 'application/json',
-  },
-});
+const instance = applyCaseMiddleware(
+  axios.create({
+    timeout: 30000,
+    baseURL: '/api',
+    withCredentials: false,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  }),
+);
 
 instance.interceptors.request.use((config) => {
-  // const token = AuthToken.getToken();
-  // config.headers['Authorization'] = `Bearer ${token}`;
   return config;
 });
 
 instance.interceptors.response.use((response) => {
-  const data = response.data;
-  return data;
+  /** luxon: convert to DateTime */
+  adaptIsoStrings(response.data);
+  return response;
 });
 
 export default instance;

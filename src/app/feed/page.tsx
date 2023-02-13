@@ -1,5 +1,5 @@
 import React from 'react';
-import FeedBox from 'components/templates/FeedBox';
+import FeedBox from 'components/organism/FeedBox';
 
 export default function Page() {
   return (
