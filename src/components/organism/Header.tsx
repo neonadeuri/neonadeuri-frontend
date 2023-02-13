@@ -21,6 +21,7 @@ const links = [
 const Header = () => {
   const pathName = usePathname();
   const firstPathName = pathName?.split('/')[1];
+
   return (
     <div className="w-full h-16 sticky border-b border-gray-200 px-6">
       <div className="max-w-7xl mx-auto h-full flex items-center justify-between">

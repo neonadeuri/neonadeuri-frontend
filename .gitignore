@@ -38,7 +38,7 @@ yarn-error.log*
 # tailwind
 .turbo
 .vscode
-styles/dist.css
+public/styles/dist.css
 
 # yarn pnp zero install
 .yarn/*
