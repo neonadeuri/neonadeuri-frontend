@@ -4,11 +4,18 @@
 import clsx from 'clsx';
 import { IBook, ISearchBook } from 'interface/book';
 import React from 'react';
+import bookQuery from 'store/subscribe/subscribe.query';
+
 interface IProps {
   book: ISearchBook;
   [prop: string]: any;
 }
 const BookItemBox = ({ book }: IProps) => {
+  const { mutate } = bookQuery.useSubscribeBookQuery({
+    isbn: book.isbn,
+    title: book.title,
+  });
+
   return (
     <div className="max-w-md py-2 px-3 border-2 flex flex-col text-sm text-gray-600 border-gray-500 rounded-md shadow-md">
       <div className="">
@@ -41,6 +48,9 @@ const BookItemBox = ({ book }: IProps) => {
             ['bg-yellow-600']: book.isSubscribe,
             ['bg-blue-800']: !book.isSubscribe,
           })}
+          onClick={() => {
+            mutate();
+          }}
         >
           {book.isSubscribe ? <>구독중</> : <>구독하기</>}
         </div>
