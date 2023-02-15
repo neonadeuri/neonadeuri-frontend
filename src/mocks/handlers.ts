@@ -41,4 +41,14 @@ export const handlers = [
       }),
     );
   }),
+  rest.post(`${backendUrl}/subs`, (req, res, ctx) => {
+    console.log(req.body);
+    return res(
+      ctx.status(200),
+      ctx.delay(1000),
+      ctx.json({
+        isbn: '8996991341 9788996991342',
+      }),
+    );
+  }),
 ];
